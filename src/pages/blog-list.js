@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import SmallPost from '../components/Blog/Post/post-small'
 
 const BlogPostListPage = ({ data: { allMarkdownRemark } }) => {
@@ -6,7 +6,7 @@ const BlogPostListPage = ({ data: { allMarkdownRemark } }) => {
 
   const postView = posts.map(({ node: post }) => <SmallPost {...post} />)
 
-  return <div className="blog-posts">{postView}</div>
+  return <Fragment>{postView}</Fragment>
 }
 
 export default BlogPostListPage
