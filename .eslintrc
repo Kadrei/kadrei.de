@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "flowtype",
+    "import",
+    "prettier",
+    "react",
+    "standard",
+    "html",
+    "markdown"
+  ],
+  "env": {
+    "jasmine": true,
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "import/no-webpack-loader-syntax": 0,
+    "prettier/prettier": [ 2, {
+      "singleQuote": true,
+      "parser": "babylon",
+      "semi": false,
+      "printWidth": 100,
+      "trailingComma": "es5"
+    } ]
+  }
+}

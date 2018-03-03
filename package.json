@@ -1,0 +1,45 @@
+{
+  "name": "kadrei.de",
+  "description": "my website & blog",
+  "version": "0.0.1",
+  "author": "Benedikt Kusemann <benedikt.kusemann@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.218",
+    "gatsby-link": "^1.6.37",
+    "gatsby-plugin-react-helmet": "^2.0.5",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby",
+    "development-blog",
+    "blog",
+    "website"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js, jsx}\"",
+    "test:lint": "eslint \"**/*.{js, jsx, md, html}\"",
+    "test:lint:fix": "eslint --fix \"**/*.{js, jsx, md, html}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "babel-eslint": "7",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-jsx": "^5.0.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.11.1"
+  }
+}

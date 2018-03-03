@@ -1,0 +1,14 @@
+{
+  "eslint.enable": true,
+  "flow.enabled": true,
+  "flow.runOnEdit": true,
+  "flow.useNPMPackagedFlow": true,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "prettier.parser": "babylon",
+  "prettier.printWidth": 100,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "vsicons.presets.angular": false
+}
