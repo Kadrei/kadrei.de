@@ -12,5 +12,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 - Inital Project Setup based on Gatsby 1.9.218
-- Added Normalize.css
-- Added dynamic Header & Title definition
+- Normalize.css
+- Dynamic Header & Title definition
+- Ability to transform markdown to blogpost
