@@ -9,9 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.0.1] - 2018-03-03
 
+- Inital Project Setup based on Gatsby 1.9.218 & react 16
+
 ### Added
 
-- Inital Project Setup based on Gatsby 1.9.218
 - Normalize.css
-- Dynamic Header & Title definition
+- Dynamic header & title definition
 - Ability to transform markdown to blogpost
+- Static file support
