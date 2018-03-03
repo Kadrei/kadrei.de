@@ -15,6 +15,9 @@
     "html",
     "markdown"
   ],
+  "globals": {
+    "graphql": true
+  },
   "env": {
     "jasmine": true,
     "browser": true,
