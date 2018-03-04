@@ -19,6 +19,11 @@ module.exports = {
      * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-catch-links/
      */
     'gatsby-plugin-catch-links',
+    /**
+     * Create an RSS feed (or multiple feeds) for your Gatsby site.
+     * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-feed
+     */
+    'gatsby-plugin-feed',
     {
       /**
        * Plugin for creating File nodes from the file system.
@@ -51,10 +56,24 @@ module.exports = {
            */
           'gatsby-remark-copy-linked-files',
           /**
-           * Create an RSS feed (or multiple feeds) for your Gatsby site.
-           * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-feed
+           * Exposes several image processing functions built on the Sharp image processing library.
+           * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp
+           * @see https://github.com/lovell/sharp
            */
-          'gatsby-plugin-feed',
+          `gatsby-plugin-sharp`,
+          {
+            /**
+             * Processes images in markdown so they can be used in the production build.
+             * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-images
+             */
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
         ],
       },
     },
