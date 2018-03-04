@@ -17,3 +17,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Dynamic header & title definition
 - Ability to transform markdown to blogpost
 - Static file support
+- Typesafety with flow

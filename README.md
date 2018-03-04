@@ -32,11 +32,15 @@ This should start a hot-reloading development environment accessible at [localho
 Form there on you are good to go to make changes on the website.
 See the [Gatsby documentation](https://www.gatsbyjs.org/docs/) for more information on that.
 
-### Linting and Formatting
+### Linting, Formatting and Typechecking
 
 To ensure a consistent codestyle & formatting this project relies on [prettier](https://prettier.io/) as well as [eslint](https://eslint.org/). Both gets setup when you run `yarn # npm install` in the [setup](#setup) stage.
 
 To check for linting & formatting errors in your code simply run `yarn test:lint # npm run test:lint`. You can also automatically fix every linting error with `yarn test:lint:fix # npm run test:lint:fix`. Same goes for formatting with `yarn format # npm run format`.
+
+You can also check for typesafety with [flow](https://flow.org). To run it simply run `yarn test:typecheck # npm run test:typecheck`. This will check all files marked with a flowmarker. You could also run `yarn test:typecheck:all # npm run test:typecheck:all` to run it on all files.
+
+In the end if you want to check for lint, formatting errors and typeerrors you can simply execute `yarn test # npm run test` to run all mentioned checks.
 
 ### Building
 

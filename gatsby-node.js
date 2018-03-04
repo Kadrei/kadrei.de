@@ -51,3 +51,11 @@ exports.createPages = ({ boundActionCreators: { createPage }, graphql }) => {
     })
   })
 }
+
+/**
+ * @see https://www.gatsbyjs.org/docs/node-apis/#modifyBabelrc
+ */
+exports.modifyBabelrc = ({ babelrc }) => ({
+  ...babelrc,
+  presets: babelrc.presets.concat(['flow']),
+})
