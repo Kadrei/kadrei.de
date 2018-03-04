@@ -24,6 +24,23 @@ module.exports = {
      * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-feed
      */
     'gatsby-plugin-feed',
+    /**
+     * Exposes several image processing functions built on the Sharp image processing library.
+     * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp
+     * @see https://github.com/lovell/sharp
+     */
+    'gatsby-plugin-sharp',
+    /**
+     * A Gatsby plugin for utilizing the Typography library with minimal configuration.
+     * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-typography
+     * @see https://kyleamathews.github.io/typography.js/
+     */
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
     {
       /**
        * Plugin for creating File nodes from the file system.
@@ -55,12 +72,6 @@ module.exports = {
            * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-copy-linked-files
            */
           'gatsby-remark-copy-linked-files',
-          /**
-           * Exposes several image processing functions built on the Sharp image processing library.
-           * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sharp
-           * @see https://github.com/lovell/sharp
-           */
-          `gatsby-plugin-sharp`,
           {
             /**
              * Processes images in markdown so they can be used in the production build.
