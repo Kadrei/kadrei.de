@@ -1,0 +1,60 @@
+@import '../../utils/colors.scss';
+@import '../../utils/spikes.scss';
+
+$header-background: $primary-color;
+$header-foreground: $secondary-color;
+$logo-size: 3rem;
+$header-padding-vertical: 0.5rem;
+$header-padding-horizontal: 1.5rem;
+
+.header {
+  width: 100vw;
+  padding: $header-padding-vertical $header-padding-horizontal;
+  background-color: $header-background;
+  color: $header-foreground;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__link {
+    color: $header-foreground;
+
+    &:hover {
+      color: $header-foreground;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    height: $logo-size;
+    width: $logo-size;
+    margin-right: $header-padding-horizontal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: $logo-size;
+    border: 0.1rem solid $header-foreground;
+  }
+
+  &__nav__item {
+    text-transform: uppercase;
+    display: inline-block;
+    border: 0.1rem solid $header-background;
+    line-height: 1.5rem;
+    text-underline-position: under;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    padding: 0.4rem;
+    margin: 0 1rem;
+    &:hover {
+      border-color: $header-foreground;
+    }
+  }
+}
+
+.spiked:after {
+  display: block;
+  height: 2rem;
+  content: '';
+  @include colored-spike($header-background);
+}

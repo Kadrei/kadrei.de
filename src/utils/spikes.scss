@@ -1,0 +1,8 @@
+@mixin colored-spike($color) {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,0 0,100 100,0' style='fill:#{$color}' /></svg>");
+}
+
+@mixin colored-spike-inverse($color) {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,100 100,0 100,100' style='fill:#{$color}' /></svg>");
+}
+
