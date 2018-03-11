@@ -14,6 +14,11 @@ module.exports = {
      */
     'gatsby-plugin-react-helmet',
     /**
+     * Provides drop-in support for SASS/SCSS stylesheets
+     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-sass/
+     */
+    'gatsby-plugin-sass',
+    /**
      * Intercepts local links from markdown and other non-react pages.
      * Does a client-side pushState to avoid the browser having to refresh the page.
      * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-catch-links/
