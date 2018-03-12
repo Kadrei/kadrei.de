@@ -1,0 +1,25 @@
+@import '../../utils/colors.scss';
+@import '../../utils/spikes.scss';
+
+$content-background: $text-color;
+$content-foreground: $primary-color;
+
+.content {
+  flex: 1;
+  background-color: $content-background;
+  color: $content-foreground;
+}
+
+.spiked:after {
+  display: block;
+  height: 2rem;
+  content: '';
+  @include colored-spike($content-background);
+}
+
+.spiked:before {
+  display: block;
+  height: 2rem;
+  content: '';
+  @include colored-spike-inverse($content-background);
+}

@@ -1,0 +1,12 @@
+@import '../utils/colors.scss';
+
+body {
+  background-color: $primary-color;
+  min-height: 100vh;
+}
+
+#___gatsby {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

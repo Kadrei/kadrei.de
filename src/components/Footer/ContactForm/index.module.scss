@@ -1,0 +1,41 @@
+.ContactForm {
+  &__field__input{
+      margin-bottom: 0.5rem;
+      background: none;
+      border: none;
+      border-bottom: solid 2px;
+      border-color: inherit;
+      color: inherit;
+      display: block;
+      outline: 0;
+      text-decoration: none;
+      width: 100%;
+      resize: none;
+
+      &::placeholder {
+        text-transform: uppercase;
+        color: inherit;
+      }
+  }
+
+  &__submit {
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    line-height: 1.5rem;
+    text-underline-position: under;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    padding: 0.4rem;
+    margin: 0 1rem;
+    border: 0.1rem solid transparent;
+
+    &:hover {
+      border: 0.1rem solid;
+      border-color: inherit;
+    }
+  }
+}

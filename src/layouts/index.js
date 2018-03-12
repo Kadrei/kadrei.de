@@ -1,15 +1,20 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'normalize.css'
+
+import '../static/global.scss'
 
 import Header from '../components/Header'
-import 'normalize.css'
+import Content from '../components/Content'
+import Footer from '../components/Footer'
 
 const TemplateWrapper = ({ data: { site }, children }) => (
   <Fragment>
     <Helmet title={site.siteMetadata.title} meta={[]} />
-    <Header title={site.siteMetadata.title} />
-    {children()}
+    <Header />
+    <Content render={children} />
+    <Footer />
   </Fragment>
 )
 

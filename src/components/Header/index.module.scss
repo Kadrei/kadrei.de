@@ -2,7 +2,6 @@
 @import '../../utils/spikes.scss';
 
 $header-background: $primary-color;
-$header-foreground: $secondary-color;
 $logo-size: 3rem;
 $header-padding-vertical: 0.5rem;
 $header-padding-horizontal: 1.5rem;
@@ -11,16 +10,16 @@ $header-padding-horizontal: 1.5rem;
   width: 100vw;
   padding: $header-padding-vertical $header-padding-horizontal;
   background-color: $header-background;
-  color: $header-foreground;
+  color: $text-color;
   display: flex;
   flex-direction: row;
   align-items: center;
 
   &__link {
-    color: $header-foreground;
+    color: $text-color;
 
     &:hover {
-      color: $header-foreground;
+      color: $text-color;
     }
   }
 
@@ -32,7 +31,7 @@ $header-padding-horizontal: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     line-height: $logo-size;
-    border: 0.1rem solid $header-foreground;
+    border: 0.1rem solid $text-color;
   }
 
   &__nav__item {
@@ -47,7 +46,7 @@ $header-padding-horizontal: 1.5rem;
     padding: 0.4rem;
     margin: 0 1rem;
     &:hover {
-      border-color: $header-foreground;
+      border-color: $text-color;
     }
   }
 }
@@ -56,5 +55,6 @@ $header-padding-horizontal: 1.5rem;
   display: block;
   height: 2rem;
   content: '';
+  background-color: $text-color;
   @include colored-spike($header-background);
 }
